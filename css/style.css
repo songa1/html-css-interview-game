@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Jua', sans-serif;
+}
+
+.step-1 {
+    margin: auto auto;
+    width: 40%;
+    text-align: center;
+}
+
+.input {
+    padding: 20px;
+    background-color: #F3F3F3;
+    border: 1px solid #B4B4B4;
+    outline: none;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size:x-large;
+    margin-bottom: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.btn {
+    padding: 20px;
+    color: white;
+    background-color: #0B8F60;
+    width: auto;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    width: 40%;
+    font-size:xx-large;
+    font-family: 'Indie Flower', cursive;
+}
+
+.btn:active {
+    border: 2px solid #0B8F60;
+}
+
+.center-part {
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Choices */
+
+.choice:focus {
+    border: 5px solid #0B8F60;
+}
+
+/* Answers */
+
+.answer:focus {
+    border: 5px solid red;
+}
+
+/* New button to try */
+
+.btn-try {
+    background-color: #0070AE;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+/* Images */
+
+img {
+    width: 300px;
+}

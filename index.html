@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="step-1">
+            <div class="header">
+                <p class="title"></p>
+            </div>
+            <div class="center-part">
+                <form class="register-form" id="register-page">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="input">
+                    <br>
+                    <br>
+                    <input type="button" id="register" value="Next" class="btn">
+                </form>
+                <div class="choose-level" id="level">
+                    <button class="input choice" onclick="chooseLevel(1)">Beginner</button>
+                    <button class="input choice" onclick="chooseLevel(2)">Intermediate</button>
+                    <button class="input choice" onclick="chooseLevel(3)">Expert</button>
+
+                    <input type="button" value="Play" class="btn" id="play">
+                </div>
+                <div class="answer-page" id="answer">
+                    <button class="input answer" onclick="answer(1)"></button>
+                    <button class="input answer" onclick="answer(2)"></button>
+                    <button class="input answer" onclick="answer(3)"></button>
+                    <input type="button" value="Next" class="btn">
+
+                    <!-- <p>Score: 3/5</p> -->
+                </div>
+                <div class="winner-page">
+                    <img src="./data/images/winner.jpg" alt="">
+                    <div class="buttons">
+                        <input type="button" value="4/5" class="btn">
+                        <input type="button" value="Try again" class="btn btn-try">
+                    </div>
+                </div>
+                <div class="loser-page">
+                    <img src="./data/images/loser.jpg" alt="">
+                    <div class="buttons">
+                        <input type="button" value="1/5" class="btn btn-red">
+                        <input type="button" value="Try again" class="btn btn-try">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./data/questions.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
